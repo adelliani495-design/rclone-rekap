@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Kebijakan Privasi — rclone-rekap</title>
+<style>
+body{font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+max-width:740px;margin:0 auto;padding:56px 24px;line-height:1.65;color:#1d1d1f;background:#fff;-webkit-font-smoothing:antialiased}
+h1{font-size:30px;letter-spacing:-.02em;margin:0 0 6px}
+h2{font-size:17px;letter-spacing:-.01em;margin:34px 0 10px}
+.sub{color:#6e6e73;font-size:15px;margin:0 0 8px}
+.badge{display:inline-block;background:#f5f5f7;color:#6e6e73;font-size:12px;padding:3px 9px;border-radius:20px;margin-top:10px}
+ul{padding-left:20px;margin:8px 0}
+li{margin:5px 0}
+code{background:#f5f5f7;padding:2px 6px;border-radius:5px;font-size:13px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;word-break:break-all}
+.card{background:#f5f5f7;border-radius:14px;padding:18px 20px;margin-top:26px;font-size:14.5px}
+a{color:#0066cc;text-decoration:none}
+a:hover{text-decoration:underline}
+footer{margin-top:44px;padding-top:18px;border-top:1px solid #e5e5ea;color:#86868b;font-size:13px}
+</style>
+</head>
+<body>
+<h1>Kebijakan Privasi</h1>
+<p class="sub">rclone-rekap · Terakhir diperbarui 16 Oktober 2026</p>
+
+<h2>Ringkasan</h2>
+<div class="card">
+Aplikasi ini bersifat <strong>lokal dan pribadi</strong>. Data transaksi Anda tetap berada di
+perangkat Anda, dengan salinan backup yang hanya dikirim ke akun Telegram dan Google Drive
+milik Anda sendiri. Tidak ada data yang dijual, dibagikan, dianalisis, atau dikirim ke
+server pihak ketiga.
+</div>
+
+<h2>1. Izin Google yang diminta</h2>
+<p>Aplikasi meminta satu cakupan (scope) OAuth Google:</p>
+<ul>
+<li><code>https://www.googleapis.com/auth/drive</code> — akses penuh ke Google Drive</li>
+</ul>
+<p>Dengan izin tersebut, aplikasi <strong>hanya melakukan satu hal</strong>: mengunggah file backup
+(XLSX/ZIP) ke folder backup milik Anda di Google Drive. Tidak ada file lain yang dibaca,
+diubah, dipindahkan, maupun dihapus. Token otorisasi disimpan di perangkat Anda dan tidak
+dibagikan.</p>
+
+<h2>2. Data yang diproses</h2>
+<ul>
+<li>Data transaksi yang <strong>Anda masukkan sendiri</strong> (via tempel/unggah CSV): tujuan, serial number, produk, status, nama reseller, harga, laba, saldo.</li>
+<li>Metadata teknis minimal yang dibutuhkan untuk proses backup (waktu pengiriman, nama file).</li>
+</ul>
+<p>Tidak ada data pribadi pengunjung yang dikumpulkan, karena halaman ini tidak memiliki
+analitik, pelacakan, maupun cookie.</p>
+
+<h2>3. Penyimpanan</h2>
+<ul>
+<li><strong>Lokal</strong> — basis data SQLite di perangkat yang menjalankan aplikasi.</li>
+<li><strong>Google Drive</strong> — file backup di folder backup milik Anda.</li>
+<li><strong>Telegram</strong> — salinan XLSX ke channel pribadi Anda.</li>
+</ul>
+
+<h2>4. Pembagian data</h2>
+<p>Data Anda tidak dibagikan kepada pihak ketiga mana pun, tidak dijual, dan tidak
+digunakan untuk tujuan periklanan atau pemodelan.</p>
+
+<h2>5. Penghapusan</h2>
+<p>Anda dapat menghapus data kapan saja: hapus isi basis data lokal melalui aplikasi,
+kosongkan folder backup di Google Drive, dan/atau hapus pesan backup di Telegram.
+Memotong izin aplikasi dapat dilakukan kapan saja melalui
+<a href="https://myaccount.google.com/permissions">Google Account → Aplikasi pihak ketiga</a>.</p>
+
+<h2>6. Perubahan</h2>
+<p>Kebijakan ini dapat diperbarui. Tanggal pembaruan terakhir selalu dicantumkan di atas.</p>
+
+<h2>7. Kontak</h2>
+<p>Pertanyaan dapat disampaikan melalui
+<a href="https://github.com/adelliani495-design">github.com/adelliani495-design</a>.</p>
+
+<footer>© 2026 rclone-rekap · Dibuat untuk penggunaan pribadi</footer>
+</body>
+</html>

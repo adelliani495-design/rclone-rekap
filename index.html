@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>rclone-rekap</title>
+<style>
+body{font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+max-width:740px;margin:0 auto;padding:56px 24px;line-height:1.65;color:#1d1d1f;background:#fff;-webkit-font-smoothing:antialiased}
+h1{font-size:30px;letter-spacing:-.02em;margin:0 0 6px}
+h2{font-size:17px;letter-spacing:-.01em;margin:34px 0 10px}
+.sub{color:#6e6e73;font-size:15px;margin:0 0 8px}
+.badge{display:inline-block;background:#f5f5f7;color:#6e6e73;font-size:12px;padding:3px 9px;border-radius:20px;margin-top:10px}
+ul{padding-left:20px;margin:8px 0}
+li{margin:5px 0}
+code{background:#f5f5f7;padding:2px 6px;border-radius:5px;font-size:13px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;word-break:break-all}
+.card{background:#f5f5f7;border-radius:14px;padding:18px 20px;margin-top:26px;font-size:14.5px}
+a{color:#0066cc;text-decoration:none}
+a:hover{text-decoration:underline}
+footer{margin-top:44px;padding-top:18px;border-top:1px solid #e5e5ea;color:#86868b;font-size:13px}
+</style>
+</head>
+<body>
+<h1>rclone-rekap</h1>
+<p class="sub">Rekap transaksi harian Otomax — backup otomatis ke Telegram &amp; Google Drive.</p>
+<span class="badge">Aplikasi pribadi · belum diverifikasi Google</span>
+
+<div class="card">
+<strong>Tujuan halaman ini.</strong><br>
+Halaman ini melayani sebagai <em>home page</em> resmi aplikasi <code>rclone-rekap</code> pada
+form OAuth Consent Screen di Google Cloud Console. Aplikasi ini berjalan di perangkat milik
+sendiri dan tidak ditawarkan ke publik.
+</div>
+
+<h2>Apa ini</h2>
+<p><code>rclone-rekap</code> adalah layanan kecil yang mengambil data transaksi PPOB/Otomax
+(tempel manual atau unggah CSV), menyimpannya di basis data SQLite lokal, lalu mengirim
+backup terjadil ke Telegram (XLSX) dan Google Drive (rclone).</p>
+
+<h2>Akses Google</h2>
+<p>Aplikasi hanya meminta satu izin OAuth:</p>
+<ul>
+<li><code>https://www.googleapis.com/auth/drive</code></li>
+</ul>
+<p>Izin itu dipakai semata-mata untuk <strong>mengunggah file backup</strong> ke Google Drive
+milik Anda sendiri. Tidak ada data yang dijual, dibagikan, atau dikirim ke server pihak ketiga.</p>
+
+<p>Lihat <a href="./privacy.html">Kebijakan Privasi</a> untuk rinciannya.</p>
+
+<footer>© 2026 rclone-rekap · Dibuat untuk penggunaan pribadi</footer>
+</body>
+</html>
